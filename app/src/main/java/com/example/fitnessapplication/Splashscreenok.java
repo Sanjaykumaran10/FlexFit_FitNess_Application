@@ -2,14 +2,14 @@ package com.example.fitnessapplication;
 
 import android.content.Intent;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.concurrent.RunnableFuture;
+
 
 public class Splashscreenok extends AppCompatActivity {
 
@@ -33,10 +33,11 @@ public class Splashscreenok extends AppCompatActivity {
         down = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.down);
         textView.setAnimation(down);
 
+
         new Handler().postDelayed(new Runnable(){
             @Override
                     public void run(){
-                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                startActivity(new Intent(Splashscreenok.this, LogInActivity.class));
                 finish();
             }
         }, 3500);

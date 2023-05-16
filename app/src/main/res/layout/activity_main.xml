@@ -4,42 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#22f1eaea"
+    android:background="#271F1F"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/toobar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="#220B37"
-        android:textAlignment="textEnd"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:title="FlexFit"
         app:titleTextColor="#fff"
-        android:gravity="end"
+        app:title="FlexFit"
         />
+
+
+
+
 
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:scrollbars="none">
 
+
+
       <LinearLayout
+          android:paddingTop="4dp"
           android:layout_width="fill_parent"
           android:layout_height="wrap_content"
-          android:layout_marginTop="10dp"
+          android:layout_marginTop="1dp"
           android:orientation="vertical">
 
           <LinearLayout
               android:layout_width="fill_parent"
               android:layout_height="wrap_content"
               android:layout_margin="10.0dp"
-              android:layout_marginTop="15.0dp"
+              android:layout_marginTop="1.0dp"
               android:background="@drawable/backgroundcrop"
               android:orientation="vertical">
 
               <LinearLayout
+
                   android:onClick="lessthan18"
                   android:layout_width="fill_parent"
                   android:layout_height="150.0dp"
@@ -296,20 +303,15 @@
           </LinearLayout>
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            >
 
-            <FrameLayout
-                android:id="@+id/f1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-/>
 
-        </LinearLayout>
       </LinearLayout>
+
     </ScrollView>
+
+
+
+
+
 </LinearLayout>
 
